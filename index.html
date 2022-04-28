@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>    
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    .span {
+        margin: 0px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;     
+    }
+
+    #header {
+        display: flex;
+        align-items: center;
+        justify-content: center;       
+        position: sticky;
+        top: 0;
+        background-color: lightskyblue;
+        text-align: center;
+        color: black;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    #headerLogo {
+        flex-grow: 1;
+    }
+
+    #headerMenu {
+        flex-grow: 1;
+        
+    }
+
+    #header a {
+        margin: 0px;
+        text-decoration: none;
+        color: whitesmoke;        
+    }
+
+    .menu {
+        font-size: 18px;
+        padding: 10px;    
+    }
+
+    .home {
+        height: 95vh;
+        text-align: center;
+        background-color: lightskyblue;
+    }
+
+    .profile {
+        height: 100vh;
+        width: 75%;
+        padding: 200pt 0;
+        margin: auto;
+        margin-top: 100pt;
+        margin-bottom: 100pt;
+        display: flex;
+        justify-content: space-between;   
+        text-align: left;
+        background-color: white;
+    }
+
+    .portfolio1 {
+        height: 100vh;
+        width: 75%;
+        padding: 200pt 0;
+        margin: auto;
+        margin-top: 100pt;
+        margin-bottom: 100pt;
+        display: flex;
+        justify-content: space-between;   
+        text-align: left;
+        background-color: white;
+    }
+
+    .portfolio2 {
+        height: 100vh;
+        text-align: center;
+        background-color: white;
+    }
+
+    .portfolio3 {
+        height: 100vh;
+        text-align: right;
+        background-color: white;
+    }
+
+    .contact {
+        height: 40vh;
+        text-align: center;
+        background-color: lightyellow;
+    }
+
+    .parent  {
+        height: 4em; /* 애니메이션 높이 */
+        overflow-y: hidden;
+        display: flex;
+        
+    }    
+    .parent .child {
+        font-size: 3em;/* 애니메이션 높이 */
+        font-weight: bold;
+        line-height: 1;
+      
+        
+    }
+    
+    .child:nth-child(1) {
+        animation-name: grow;
+        animation-duration: 5s;/* 애니메이션 시간 */
+        animation-iteration-count:infinite;
+        /* animation-delay: 1s; */
+        
+    }
+    .child:nth-child(2) {
+        animation-name: grow1;        
+        animation-duration: 5s;/* 애니메이션 시간 */
+        animation-iteration-count:infinite;
+        /* animation-delay: 2s; */
+        
+    }
+    .child:nth-child(3) {
+        animation-name: grow2;
+        animation-duration: 5s;/* 애니메이션 시간 */
+        animation-iteration-count:infinite;
+        /* animation-delay: 3s; */
+        
+    }
+    
+    /* 키프레임 애니메이션 */
+    @keyframes grow {
+        from { 
+            transform: translateY(2em);
+        }  /* 애니메이션 높이 */
+        to {
+             transform: translateY(0);
+        }
+    }
+
+    @keyframes grow1 {
+        from { 
+            transform: translateY(3em);
+        }  /* 애니메이션 높이 */
+        to {
+             transform: translateY(0);
+        }
+    }
+
+    @keyframes grow2 {
+        from { 
+            transform: translateY(5em);
+        }  /* 애니메이션 높이 */
+        to {
+             transform: translateY(0);
+        }
+    }
+    
+</style>
+
+<body>
+    <section id="header">
+    <div id="headerLogo"> 
+        <span><font size="5em">Web</font></span> Designer Song Chi Gyu Portfolio
+    </div>
+    <div id="headerMenu">
+        <ul>
+            <li>
+                <a href="#home"><b class="menu"><strong style="color: lightcoral;">
+                    Home</strong></b></a>
+                <a href="#profile">
+                <font onmouseover="this.style.color='#000000'" onmouseout="this.style.color='#F5F5F5'"><b class="menu">Profile</b></font></a>
+                <a href="#portfolio1">
+                <font onmouseover="this.style.color='#000000'" onmouseout="this.style.color='#F5F5F5'"><b class="menu">Portfolio1</b></font></a>
+                <a href="#portfolio2">
+                <font onmouseover="this.style.color='#000000'" onmouseout="this.style.color='#F5F5F5'"><b class="menu">Portfolio2</b></font></a>
+                <a href="#portfolio3">
+                <font onmouseover="this.style.color='#000000'" onmouseout="this.style.color='#F5F5F5'"><b class="menu">Portfolio3</b></font></a>
+            </li>
+        </ul>
+    </div>
+    </section>
+
+    <section id="home">
+    <div id="home" class="home">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>                    
+        <div class="parent">
+            <div class="child">
+            Welcome To
+            </div>
+            <div class="child">
+            My Portfolio Web Site
+            </div>
+            <div class="child">
+            Designed by Song Chi Gyu
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section id="profile" class="profile">
+        <div>
+            <img src="image/study.jpg" width="200px" height="250px">
+        </div>
+        <div id="profile">
+            <h1><strong style="color: red;">
+                profile</strong></h1>
+            <p>
+                <strong><span>Name</span></strong> 송치규
+            </p>
+            <p>
+                <strong><span>Birthday</span></strong> 1992.03.03
+            </p>
+            <p>
+                <strong><span>E-mail</span></strong> sck0303@naver.com
+            </p>
+            <p>
+                <strong><span>Phone</span></strong> 010-9892-7600
+            </p>
+            <p>
+                <strong><span>Address</span></strong> 부산 해운대구 좌동
+            </p>
+            <p>
+                시시각각 급변하는 웹트렌드와 기술을 빠르게 캐치하고 반영하며,
+                <br><br>
+                능동적으로 일을 해내는 '웹 디자이너'가 되겠습니다.
+                <br><br>
+                언제나 배움의 자세를 놓지않고, 발전하는 '웹 퍼블리셔'가 되겠습니다.
+            </p>
+        </div>
+            <img src="image/능력3.jpg" width="350px" height="350px" >
+        </div>
+    </section>
+
+    <section id="portfolio1" class="portfolio1">
+    <div id="portfolio1">
+        <br>
+        <h1>Vehicle</h1>
+        <p>자동차의 종류와 특징 역사까지 알수 있는</p><p> 반응형 웹사이트</p>
+        <p><strong><span>ViewPoint</span></strong> 반응형/웹표준/웹접근성</p>
+        <p><strong><span>Program</span></strong> HTML / CSS / JS</p>
+        <p><strong><span>Work</span></strong> 기획/디자인/기획 참여도 100%</p>
+        <h1><a href="secondproject.html" target='_blank'>프로젝트1</a></h1>
+    </div>
+        <div>
+    <img src="image/아이맥스2.jpg" width="350px" height="350px" >
+    </div>
+    </section>
+
+    <div id="portfolio2" class="portfolio2">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>Vehicle</h1>
+        <p>자동차의 종류와 특징 역사까지 알수 있는</p><p> 반응형 웹사이트</p>
+        <h1><a href="Thirdproject.html" target='_blank'>프로젝트2</a></h1>
+    </div>
+
+    <div id="portfolio3" class="portfolio3">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>Vehicle</h1>
+        <p>자동차의 종류와 특징 역사까지 알수 있는</p><p> 반응형 웹사이트</p>
+        <h1><a href="Fourproject.html" target='_blank'>프로젝트3</a></h1>
+    </div>
+
+    <div id="contact" class="contact">
+        <br><br><br><br>
+        <h3>CONTACT ME</h3>
+        <p>전화 번호 010-9892-7600</p>
+        <p>이메일 sck0303@naver.com</p>
+        <br><br>
+        <p>Copyright 2019 All Rights Reserved</p>
+    </div>
+</body>
+</html>
+<script>
+     
+</script>
