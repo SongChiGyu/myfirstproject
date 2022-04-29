@@ -1,0 +1,21 @@
+body {
+    height: 2000px;
+    margin: 0%;
+}
+
+section{
+    height: 1000px;
+    background-image: url("image/car1.jpg");
+    background-attachment: fixed;
+}
+
+.topmenu {
+    position: relative;
+    text-align: right;
+
+}
+
+.dropdown {
+    position: absolute;
+    /* right: 300px; */
+}
