@@ -31,3 +31,12 @@ body {
 .act3{
     height: 100vh;
 }
+
+h1 {
+    left: 800px;
+    top: 400px;
+    font-size: 8em;
+    font-family: sans-serif;
+    position: absolute;
+
+}
