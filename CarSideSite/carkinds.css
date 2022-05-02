@@ -1,0 +1,99 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+}
+
+
+h1 {
+    left: 200px;
+    top: 300px;
+    font-size: 2.5em;
+    width: 258px;
+    font-family: sans-serif;
+    position: absolute;
+    animation: slide 2s ease-out;
+}
+
+@keyframes slide {
+    from {
+        left: -200px;
+        opacity: 0;
+    }
+    to {
+        left: 200px;
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    from {
+        left: 200px;
+        opacity: 1;
+    }
+    to {
+        left: -200px;
+        opacity: 0;
+    }
+}
+
+.home {
+    height: 100vh;
+    text-align: center;
+    background-color: black;
+}
+
+.sedan {
+    height: 100vh;
+    text-align: center;
+    background-image: url("../image/세단배경이미지.jpg");
+}
+
+.coupe {
+    height: 100vh;
+    text-align: center;
+    background-image: url("../image/쿠페배경이미지.jpg");
+}
+
+.wagons {
+    height: 100vh;
+    text-align: center;
+}
+
+.suv {
+    height: 100vh;
+    text-align: center;
+}
+
+.conver {
+    height: 100vh;
+    text-align: center;
+}
+.hech {
+    height: 100vh;
+    text-align: center;
+}
+.limo {
+    height: 100vh;
+    text-align: center;
+}
+.van {
+    height: 100vh;
+    text-align: center;
+}
+.truck {
+    height: 100vh;
+    text-align: center;
+}
+
+div {    
+	display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+    grid-gap: 15px;
+}
+
+.container {
+    grid-template-columns: 1fr 2fr 100px 25%;
+}

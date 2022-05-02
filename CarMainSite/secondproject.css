@@ -1,11 +1,11 @@
 body {
-    height: 2000px;
+    height: 3000px;
     margin: 0%;
 }
 
-section{
+.main{
     height: 1000px;
-    background-image: url("image/car1.jpg");
+    background-image: url("../image/car1.jpg");
     background-attachment: fixed;
 }
 
@@ -18,4 +18,16 @@ section{
 .dropdown {
     position: absolute;
     /* right: 300px; */
+}
+
+.act1{
+    height: 100px;
+}
+
+.act3{
+    height: 100vh;
+}
+
+.act3{
+    height: 100vh;
 }
