@@ -4,8 +4,19 @@ html {
 
 body {
     margin: 0px;
+    padding: 0px;
 }
-
+.bg {
+    position: absolute;
+     top: 0px;
+     left: 0px;
+     width: 400px;
+     height: 400px;
+     z-index: -1;
+  }
+  video {
+    width: 100%;
+  }
 
 h1 {
     left: 200px;
@@ -42,7 +53,6 @@ h1 {
 .home {
     height: 100vh;
     text-align: center;
-    background-color: black;
 }
 
 .sedan {
