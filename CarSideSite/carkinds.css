@@ -10,12 +10,11 @@ body {
     position: absolute;
      top: 0px;
      left: 0px;
-     width: 400px;
-     height: 400px;
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
      z-index: -1;
-  }
-  video {
-    width: 100%;
   }
 
 h1 {
@@ -58,13 +57,11 @@ h1 {
 .sedan {
     height: 100vh;
     text-align: center;
-    background-image: url("../image/세단배경이미지.jpg");
 }
 
 .coupe {
     height: 100vh;
     text-align: center;
-    background-image: url("../image/쿠페배경이미지.jpg");
 }
 
 .wagons {
@@ -98,12 +95,12 @@ h1 {
     text-align: center;
 }
 
-div {    
-	display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
-    grid-gap: 15px;
+.container {
+	display: flex;
+    flex-wrap: wrap;
 }
 
-.container {
-    grid-template-columns: 1fr 2fr 100px 25%;
+.item {
+	flex-grow: 1;    
+    margin: 20px;
 }
