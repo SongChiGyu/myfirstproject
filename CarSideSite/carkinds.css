@@ -5,6 +5,7 @@ html {
 body {
     margin: 0px;
     padding: 0px;
+    background-color: black;
 }
 .bg {
     position: absolute;
@@ -19,7 +20,7 @@ body {
 
 video {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 h1 {
@@ -54,58 +55,75 @@ h1 {
     }
 }
 
-.home {
+.home {    
     height: 100vh;
     text-align: center;
 }
 
 .sedan {
     height: 100vh;
-    text-align: center;
+    text-align: left;
 }
 
 .coupe {
     height: 100vh;
-    text-align: center;
+    text-align: left;
 }
 
 .wagons {
     height: 100vh;
-    text-align: center;
+    text-align: left;
 }
 
 .suv {
     height: 100vh;
-    text-align: center;
+    text-align: left;
 }
 
 .conver {
     height: 100vh;
-    text-align: center;
+    text-align: left;
 }
 .hech {
     height: 100vh;
-    text-align: center;
+    text-align: left;
 }
 .limo {
     height: 100vh;
-    text-align: center;
+    text-align: left;
 }
 .van {
     height: 100vh;
-    text-align: center;
+    text-align: left;
 }
 .truck {
     height: 100vh;
-    text-align: center;
+    text-align: left;
 }
 
 .container {
 	display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .item {
-	flex-grow: 1;    
-    margin: 20px;
+	flex-grow: 1;
+}
+
+p {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: grow 2s ease-out;
+}
+
+@keyframes grow {
+    from {
+        height: -200px;
+        opacity: 0;
+    }
+    to {
+        height: 200px;
+        opacity: 1;
+    }
 }
