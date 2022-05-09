@@ -33,6 +33,12 @@ h1 {
     animation: slide 2s ease-out;
 }
 
+h3 {    
+    font-size: 3em;
+    font-family: sans-serif;
+    
+}
+
 @keyframes slide {
     from {
         left: -200px;
@@ -110,20 +116,110 @@ h1 {
 	flex-grow: 1;
 }
 
-p {
+.back {
+    height: 40vh;
+    text-align: center;
+}
+
+.quickmenu {
+    position:absolute;
+    width:90px;
+    top:50%;
+    margin-top:-50px;
+    right:10px;
+    background:#fff;
+    text-align: center;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0px;     
+}
+
+li {
+    padding: 10px;
+}
+
+.textp1 {
     padding: 10px;
     margin: 0px;
     font-family: sans-serif;
-    animation: grow 2s ease-out;
+    animation: grow1 2s ease-out;
 }
 
-@keyframes grow {
-    from {
-        height: -200px;
+.textp2 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: grow1 2s ease-out;
+}
+
+.textp3 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: grow1 2s ease-out;
+}
+
+.textp4 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: grow1 2s ease-out;
+}
+
+.textp5 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: grow1 2s ease-out;
+}
+
+.textp6 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: grow1 2s ease-out;
+}
+
+.textp7 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: grow1 2s ease-out;
+}
+
+.textp8 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: grow1 2s ease-out;
+}
+
+.textp9 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: grow1 2s ease-out;
+}
+
+@keyframes grow1 {
+    from {        
         opacity: 0;
     }
     to {
-        height: 200px;
         opacity: 1;
     }
 }
+
+@keyframes grow2 {
+    from {        
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
