@@ -21,15 +21,28 @@ body {
 }
 
 .act1{
-    height: 100px;
+    height: 100vh;
+    text-align: center;
+}
+
+.act2{
+    height: 100vh;
+    text-align: center;
 }
 
 .act3{
     height: 100vh;
+    text-align: center;
 }
 
-.act3{
+.act4{
     height: 100vh;
+    text-align: center;
+}
+
+.act5{
+    height: 100vh;
+    text-align: center;
 }
 
 h1 {
@@ -39,4 +52,59 @@ h1 {
     font-family: sans-serif;
     position: absolute;
 
+}
+
+.container {
+	display: flex;
+    flex-wrap: nowrap;
+}
+
+.item {
+	flex-grow: 1;
+}
+
+.textany1 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: grow1 1s ;
+}
+
+.textany2 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: grow1 1s ;
+}
+
+.textany3 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: grow1 1s ;
+}
+
+.textany4 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: grow1 1s ;
+}
+
+@keyframes grow1 {
+    from {        
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes grow2 {
+    from {        
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
