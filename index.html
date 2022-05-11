@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>포트폴리오</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
 </head>
 <style>
     html {
@@ -50,7 +52,12 @@
     #header a {
         margin: 0px;
         text-decoration: none;
-        color: whitesmoke;        
+        color: whitesmoke;
+        text-decoration-line: none;  
+    }
+
+    a{
+        text-decoration-line: none;
     }
 
     .menu {
@@ -154,6 +161,53 @@
     .child:nth-child(5) {
         flex-grow: 1;
 
+    }
+
+    button {
+    margin: 0px;
+    outline: none;
+    }
+
+    .custom-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    }
+
+    /* 15 */
+    .btn-15 {
+    background: #000;
+    color: #fff;
+    z-index: 1;
+    }
+    .btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #e0e5ec;
+    transition: all 0.3s ease;
+    }
+    .btn-15:hover {
+    color: #000;
+    }
+    .btn-15:hover:after {
+    left: 0;
+    width: 100%;
+    }
+    .btn-15:active {
+    top: 2px;
     }
     
     /* 키프레임 애니메이션 */
@@ -267,7 +321,7 @@
         <p><strong><span>ViewPoint</span></strong> 반응형/웹표준/웹접근성</p>
         <p><strong><span>Program</span></strong> HTML / CSS / JS</p>
         <p><strong><span>Work</span></strong> 기획/디자인/기획 참여도 100%</p>
-        <h1><a href="CarMainSite/secondproject.html" target='_blank'>프로젝트1</a></h1>
+        <h1><a href="CarMainSite/secondproject.html" target='_blank'><button class="custom-btn btn-15">프로젝트1</button></a></h1>
     </div>
         <div>
     <img src="image/아이맥스2.jpg" width="350px" height="350px" >
@@ -284,7 +338,7 @@
             <p><strong><span>ViewPoint</span></strong> 반응형/웹표준/웹접근성</p>
             <p><strong><span>Program</span></strong> HTML / CSS / JS</p>
             <p><strong><span>Work</span></strong> 기획/디자인/기획 참여도 100%</p>
-            <h1><a href="CarMainSite/secondproject.html" target='_blank'>프로젝트2</a></h1>
+            <h1><a href="ShopSite/Thirdproject.html" target='_blank'><button class="custom-btn btn-15">프로젝트2</button></a></h1>
         </div>
         </section>
 
