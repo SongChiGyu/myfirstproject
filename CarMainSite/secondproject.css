@@ -1,3 +1,9 @@
+
+                                                                                        /*전의 내 코드 */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 3000px;
     margin: 0%;
@@ -40,11 +46,6 @@ body {
     text-align: center;
 }
 
-.act5{
-    height: 100vh;
-    text-align: center;
-}
-
 h1 {
     left: 800px;
     top: 400px;
@@ -54,57 +55,198 @@ h1 {
 
 }
 
-.container {
-	display: flex;
+/* .container {
+    display: flex;
     flex-wrap: nowrap;
-}
+} 
 
 .item {
-	flex-grow: 1;
+    flex-grow: 1;
 }
-
+*/
 .textany1 {
     padding: 10px;
     margin: 0px;
     font-family: sans-serif;
-    animation: grow1 1s ;
+    animation: fadeInUp1 1s ;
 }
 
 .textany2 {
     padding: 10px;
     margin: 0px;
     font-family: sans-serif;
-    animation: grow1 1s ;
+    animation: fadeInUp1 1s ;
 }
 
 .textany3 {
     padding: 10px;
     margin: 0px;
     font-family: sans-serif;
-    animation: grow1 1s ;
+    animation: fadeInUp1 1s ;
 }
 
 .textany4 {
     padding: 10px;
     margin: 0px;
     font-family: sans-serif;
-    animation: grow1 1s ;
+    animation: fadeInUp1 1s ;
 }
 
-@keyframes grow1 {
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp1;
+    -webkit-animation-name: fadeInUp1;
+}
+
+/* Animation */
+
+@keyframes fadeInUp1 {
     from {        
+        transform: translate3d(0,40px,0);
         opacity: 0;
     }
+
     to {
+        transform: translate3d(0,0,0);
         opacity: 1;
     }
 }
 
-@keyframes grow2 {
-    from {        
+@keyframes fadeInUp2 {
+    from {
+        transform: translate3d(0,0,0);
         opacity: 1;
     }
-    to {
+
+    to {        
+        transform: translate3d(0,40px,0);
         opacity: 0;
+    }
+}
+
+
+                                                                                                /*반응형 삽입 코드 */
+
+#container {                                                           
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+#container a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    display: none;
+    width: 100%;
+    color: white;
+    font-size: 13px;
+}
+
+#item1 {
+    opacity: 0.6;
+    border-radius: 3%;
+    transition: all 0.3s ease-in-out;
+}
+
+#item2 {
+    opacity: 0.6;
+    border-radius: 3%;
+    transition: all 0.3s ease-in-out;
+}
+
+#item3 {
+    opacity: 0.6;
+    border-radius: 3%;
+    transition: all 0.3s ease-in-out;
+}
+
+#item4 {
+    opacity: 0.6;
+    border-radius: 3%;
+    transition: all 0.3s ease-in-out;
+}
+
+#item5 {
+    opacity: 0.6;
+    border-radius: 3%;
+    background-image: url(https://i.ibb.co/v1kKBr6/6-2.jpg);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 700px) {                                                 
+    #container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    #item1 {
+        height: 250px;
+    }
+
+    #item2 {
+        height: 250px;
+    }
+    #item3 {
+        height: 250px;
+    }
+    #item4 {
+        height: 250px;
+    }
+    #item5 {
+        height: 250px;
+    }
+}
+
+@media (max-width: 450px) {
+    #header {
+        margin: 0px;
+    }
+
+    #container {
+        width: inherit;
+        display: block; 
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        /* grid-template-rows: repeat(auto-fill, minmax(250px, 1fr)); */
+        gap: 10px;
+    }
+
+    #item1 {
+        height: 110px;
+    }
+
+    #item2 {
+        margin-top: 10px;
+        height: 110px;
+    }
+    #item3 {
+        margin-top: 10px;
+        height: 110px;
+    }
+    #item4 {
+        margin-top: 10px;
+        height: 110px;
+    }
+    #item5 {
+        margin-top: 10px;
+        height: 110px;
     }
 }

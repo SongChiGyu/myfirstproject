@@ -5,10 +5,10 @@ window.addEventListener('scroll',function () {
     console.log("scrollY",value);
 
     if (value >= 1000) {
-        subText.style.animation = 'grow1 1s';        
+        subText.style.animation = 'fadeInUp1 1s';        
     } 
     else {
-        subText.style.animation = 'grow2 1s forwards';      
+        subText.style.animation = 'fadeInUp2 1s forwards';      
     }
 });
 
@@ -19,10 +19,10 @@ window.addEventListener('scroll',function () {
     
 
     if (value >= 1900) {
-        goodText1.style.animation = 'grow1 1s';        
+        goodText1.style.animation = 'fadeInUp1 1s';        
     } 
     else {
-        goodText1.style.animation = 'grow2 1s forwards';      
+        goodText1.style.animation = 'fadeInUp2 1s forwards';      
     }
 });
 
@@ -33,10 +33,10 @@ window.addEventListener('scroll',function () {
     
 
     if (value >= 2800) {
-        goodText2.style.animation = 'grow1 1s';        
+        goodText2.style.animation = 'fadeInUp1 1s';        
     } 
     else {
-        goodText2.style.animation = 'grow2 1s forwards';      
+        goodText2.style.animation = 'fadeInUp2 1s forwards';      
     }
 });
 
@@ -47,9 +47,9 @@ window.addEventListener('scroll',function () {
     
 
     if (value >= 3700) {
-        goodText3.style.animation = 'grow1 1s';        
+        goodText3.style.animation = 'fadeInUp1 1s';        
     } 
     else {
-        goodText3.style.animation = 'grow2 1s forwards';      
+        goodText3.style.animation = 'fadeInUp2 1s forwards';      
     }
 });
