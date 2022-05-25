@@ -1,52 +1,144 @@
-body{
+body,div,ul,li{
     margin: 0px;    
     padding: 0px;  
     font-family: sans-serif;
     font-size: 100%;
+    list-style-type: none;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;     
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
 }
 
-#sub {
-    display: none;
-    font-size: 15px;
-    color: black;
-}
-#sub a:hover {
-    color: blue;
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
 }
 
-#dropcontent {
-    display: none;
-    position: absolute;
-    background-color: lightgray;
-    width: 140px;
-    margin-top: 5px;
-    margin-left: -10px;
-    border-radius: 3%;
-}
-#dropcontent a {
-    font-size: 15px;
+#container {                                                           
+    position: relative;
+    min-width: 980px;
+    overflow: hidden;
 }
 
-#dropdownbtn {
-    background-color: transparent;
-    border-style: none;
-    margin-left: -10px;
+#container .home {
+    background-color: #fff;
+    min-width: 1020px;
+}
+
+.home {
+    border: 0;
+}
+
+.renewal-header {
+    position:relative;
+    background-color:#fff;
+    border-bottom:1px solid #eee;
+}
+
+.renewal-header #header{
+    position:relative;
+    width:980px;
+    height:115px;
+    margin:0 auto;
+    padding-top:32px;
+    background:#fff;
+}
+
+.renewal-header #header section{
+    position:absolute;
+    width:840px;
+    height:91px;
+    margin:25px 0 0 140px;
 }
 
 #header {
+    z-index: 3;
+}
+
+.renewal-header #header .product-search a.search, .renewal-header .my-coupang-icon, .renewal-header .cart-icon, .renewal-header .category-btn, .renewal-header .select-icon, .renewal-header .depth-select-icon, .renewal-header .speech-icon, .renewal-header .blue-arrow, .renewal-header .subscription-menu-warning-icon, .renewal-header .gnb-menu li.rocket-delivery, .renewal-header .vendor-join .ic {
+    background-image: url(//static.coupangcdn.com/image/coupang/common/pc_header_img_sprite_180104.png);
+    background-repeat: no-repeat;
+}
+
+.category-btn {
+    position: absolute;
+    width: 110px;
+    height: 115px;
+    top: 32px;
+    left: 0;
+    margin-right: 30px;
+    background-position: 0 0;
+    text-align: center;
+}
+
+.category-btn a {
+    display: block;
+    margin-top: 73px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.category-btn:hover .category-layer{
+    height:auto;
+    display:block
+}
+
+.category-layer {
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-height: 450px;
+    top: 114px;
+    left: 0;
+    display: none;
+    border: 1px solid #ddd;
+    box-shadow: -1px 4px 5px rgb(0 0 0 / 30%);
+    z-index: 1;
+    background: #fff;
+    text-align: left;
+}
+
+.category-layer .shopping-menu-list {
+    padding: 8px 0 5px 0;
+    border-bottom: #ddd solid 1px;
+}
+
+.category-layer li {
+    height: 29px;
+}
+
+.fashion-sundries>a:hover,.category-layer .theme-store>a:hover,.category-layer .travel-leisure>a:hover{
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.category-layer .menu>li.fashion-sundries>a{
+    background-position:-8px -27px;
+}
+
+.fashion-sundries>a:hover{
+    background-position:-200+px -27px;
+}
+
+.fashion-sundries.hover>a{
+    background-position:-200px -27px;
+}
+
+#headmenu {
+    display: flex;
+    align-items: center;
     position: sticky;
     top: 0;
-    padding: 10px;
-    opacity: 0.8;
-    z-index: 1;
-    text-align: center;    
-    background-color: lightgray;
+    text-align: center;
+    margin: 0px;
+    padding: 0px; 
 }
 
 #headerMenu1 {
@@ -73,93 +165,47 @@ ul {
     
 }
 
-#header a {
-    padding: 10px;
-    text-decoration: none;
-    font-size: 15px;
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
     color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-#header a:hover {
-    color: blue;
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
 }
 
-#headmenu {
-    display: flex;
-    align-items: center;
-    /* justify-content: center;        */
-    position: sticky;
-    top: 0;
-    text-align: center;
-    margin: 0px;
-    padding: 0px; 
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-#container {                                                            /*그리드 css 설정1 */
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    margin-top: 10px;
-    display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-    grid-template-rows: repeat(3, minmax(200px, 1fr));
-    gap: 20px;
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 
-.outer {                                                                    /*그리드 css 설정2 */
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@media (max-width: 700px) {
 
-@media (max-width: 700px) {                                                 /*그리드 css 설정3 */
-    #container {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
-    }
 }
 
 @media (max-width: 450px) {
-    #header {
-        margin: 0px;
-    }
 
-    #nav {
-        display: none;
-    }
-    #sub {
-        display: block;
-    }
-
-    #dropdownbtn {
-        display: block;
-        float: left;
-    }
-
-    #dropcontent {
-        display: none;
-        position: absolute;
-        background-color: lightgray;
-        width: 100px;
-        padding: 0px 0px 0px 0px;
-    }
-
-    #dropcontent a {
-        padding: 12px;
-        display: block;
-    }
-
-    #dropdownbtn:hover #dropcontent {
-        display: block;
-    }
-    
-    #dropcontent a:hover {
-        border-radius: 4%;
-        background-color: gray;
-    }
-    #btn {
-        width: 239px;
-    }
 }
