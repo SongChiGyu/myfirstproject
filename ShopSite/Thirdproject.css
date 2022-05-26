@@ -131,6 +131,33 @@ li {
     background-position:-200px -27px;
 }
 
+.renewal-header #header section div.clearFix {
+    position: relative;
+    z-index: 3;
+}
+
+.renewal-header #header .product-search {
+    float: left;
+    margin-left: 0;
+    width: 484px;
+    height: 37px;
+    margin-right: 22px;
+    border: 2px solid #4285f4;
+    background-position: 0 -207px;
+}
+
+.clearFix {
+    display: block;
+}
+
+.clearFix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
 #headmenu {
     display: flex;
     align-items: center;
