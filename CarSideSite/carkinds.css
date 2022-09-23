@@ -80,22 +80,34 @@ h3 {
 }
 
 .coupe {
+    padding-top: 200px;
     display: block;
     height: 100vh;
     text-align: center;
 }
 .coupe2 {
+    padding-top: 200px;
     display: none;
     height: 100vh;
     text-align: center;
 }
 
 .wagons {
+    padding-top: 200px;
     height: 100vh;
     text-align: left;
 }
 
 .suv {
+    padding-top: 200px;
+    display: block;
+    height: 100vh;
+    text-align: center;
+}
+
+.suv2 {
+    padding-top: 200px;
+    display: none;
     height: 100vh;
     text-align: center;
 }
@@ -402,7 +414,7 @@ background: #ffff;
     #subNav li a{
         padding: 5px;
     }
-    .sedan {
+    .sedan {        
         height: 100vh;
         text-align: left;
     }
@@ -412,6 +424,21 @@ background: #ffff;
         text-align: center;
     }
     .coupe2 {
+        padding-top: 0px;
+        display: block;
+        height: 100vh;
+        text-align: center;
+    }
+    .wagons {
+        padding-top: 0px;
+    }
+    .suv {
+        display: none;
+        height: 100vh;
+        text-align: center;
+    }
+    .suv2 {
+        padding-top: 0px;
         display: block;
         height: 100vh;
         text-align: center;
