@@ -74,10 +74,10 @@
     .profile {
         height: 100vh;
         width: 75%;
-        padding: 200pt 0;
+        padding: 200px;
         margin: auto;
-        margin-top: 100pt;
-        margin-bottom: 100pt;
+        margin-top: 100px;
+        margin-bottom: 100px;
         display: flex;
         justify-content: space-between;   
         text-align: left;
@@ -91,10 +91,7 @@
         margin: auto;
         margin-top: 100pt;
         margin-bottom: 100pt;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(200px, 1fr));
-        /* grid-template-rows: repeat(3, minmax(200px, 1fr)); */
-        gap: 20px;
+        display: flex;
         justify-content: space-between;   
         text-align: left;
         background-color: white;
@@ -254,21 +251,90 @@
         }
     }
 
-    @media (max-width: 700px) {                                                 /*그리드 css 설정3 */
-        #container {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+    @media (max-width: 700px) {     
+        body {
+            max-width: 100%;
+        }                                    
+        #header {
+            display: block;
+            max-width: 100%;
+            padding: 0px;
         }
-
-        #item1 {
-            height: 250px;
+        #home {
+            max-width: 100%;
         }
-
-        #item2 {
-            height: 250px;
+        .parent  {
+            height: 4em; 
+            overflow-y: hidden;        
         }
-        #item3 {
-            height: 250px;
+        .profile {
+            height: 150vh;
+            max-width: 100%;
+            padding: 0px;
+            padding-top: 100px;
+            margin: 50px;
+            margin-bottom: 200px;
+            justify-content: space-between;
+            text-align: center;
+            background-color: white;
+            display: block;
+        }
+        .portfolio1 {
+            height: 100vh;
+            max-width: 100%;
+            padding: 0px;
+            padding-top: 100px;
+            margin: 50px;
+            margin-bottom: 200px;
+            justify-content: space-between;
+            text-align: center;
+            background-color: white;
+            display: block;
+        }
+        .protfolioimg1 {
+            max-width: 100%;
+        }
+        .portfolio2 {
+            height: 100vh;
+            max-width: 100%;
+            padding: 0px;
+            padding-top: 100px;
+            margin: 50px;
+            margin-bottom: 200px;
+            justify-content: space-between;
+            text-align: center;
+            background-color: white;
+            display: block;
+        }
+        .protfolioimg2 {
+            max-width: 100%;
+        }
+        .portfolio3 {
+            height: 100vh;
+            max-width: 100%;
+            padding: 0px;
+            padding-top: 100px;
+            margin: 50px;
+            margin-bottom: 200px;
+            justify-content: space-between;
+            text-align: center;
+            background-color: white;
+            display: block;
+        }
+        .protfolioimg3 {
+            max-width: 100%;
+        }
+        .contact {
+            max-width: 100%;
+            margin: 0px;
+            margin-top: 200px;
+            padding: 0px;
+            height: 40vh;
+            text-align: center;
+            background-color: lightyellow;
+        }
+        .abilityimg {
+            max-width: 100%;
         }
     }
      
@@ -276,51 +342,51 @@
 
 <body>
     <section id="header">
-    <div id="headerLogo"> 
-        <span><font size="5em">Web</font></span> Designer Song Chi Gyu Portfolio
-    </div>
-    <div id="headerMenu">
-        <ul>
-            <li>
-                <a href="#home"><b class="menu"><strong style="color: lightcoral;">
-                    Home</strong></b></a>
-                <a href="#profile">
-                <font onmouseover="this.style.color='#000000'" onmouseout="this.style.color='#F5F5F5'"><b class="menu">Profile</b></font></a>
-                <a href="#portfolio1">
-                <font onmouseover="this.style.color='#000000'" onmouseout="this.style.color='#F5F5F5'"><b class="menu">Portfolio1</b></font></a>
-                <a href="#portfolio2">
-                <font onmouseover="this.style.color='#000000'" onmouseout="this.style.color='#F5F5F5'"><b class="menu">Portfolio2</b></font></a>
-                <a href="#portfolio3">
-                    <font onmouseover="this.style.color='#000000'" onmouseout="this.style.color='#F5F5F5'"><b class="menu">Portfolio3</b></font></a>
-            </li>
-        </ul>
-    </div>
+        <div id="headerLogo"> 
+            <span><font size="5em">Web</font></span> Designer Song Chi Gyu Portfolio
+        </div>
+        <div id="headerMenu">
+            <ul>
+                <li>
+                    <a href="#home"><b class="menu"><strong style="color: lightcoral;">
+                        Home</strong></b></a>
+                    <a href="#profile">
+                    <font onmouseover="this.style.color='#000000'" onmouseout="this.style.color='#F5F5F5'"><b class="menu">Profile</b></font></a>
+                    <a href="#portfolio1">
+                    <font onmouseover="this.style.color='#000000'" onmouseout="this.style.color='#F5F5F5'"><b class="menu">Portfolio1</b></font></a>
+                    <a href="#portfolio2">
+                    <font onmouseover="this.style.color='#000000'" onmouseout="this.style.color='#F5F5F5'"><b class="menu">Portfolio2</b></font></a>
+                    <a href="#portfolio3">
+                        <font onmouseover="this.style.color='#000000'" onmouseout="this.style.color='#F5F5F5'"><b class="menu">Portfolio3</b></font></a>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <section id="home">
-    <div id="home" class="home">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div class="parent">
-            <div class="child"></div>
-            <div class="child">
-            Welcome To
+        <div class="home">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="parent">
+                <div class="child"></div>
+                <div class="child">
+                Welcome To
+                </div>
+                <div class="child">
+                My Portfolio Web Site
+                </div>
+                <div class="child">
+                Designed by Song Chi Gyu
+                </div>
+                <div class="child"></div>
             </div>
-            <div class="child">
-            My Portfolio Web Site
-            </div>
-            <div class="child">
-            Designed by Song Chi Gyu
-            </div>
-            <div class="child"></div>
         </div>
-    </div>
     </section>
     
     <section id="profile" class="profile">
         <div>
             <img src="image/study.jpg" width="200px" height="250px">
         </div>
-        <div id="profile">
+        <div>
             <h1><strong style="color: red;">
                 profile</strong></h1>
             <p>
@@ -344,44 +410,45 @@
                 능동적으로 일을 해내는 '웹 디자이너'가 되겠습니다.
                 <br><br>
                 언제나 배움의 자세를 놓지않고, 발전하는 '웹 퍼블리셔'가 되겠습니다.
-            </p>
+            </p>            
         </div>
-            <img src="image/능력3.jpg" width="350px" height="350px" >
+        <div>
+            <img class="abilityimg" src="image/능력3.jpg" width="350px" height="350px" >
         </div>
     </section>
     
     <section id="portfolio1" class="portfolio1">
-    <div id="portfolio1">        
-        <h1>Vehicle</h1>
-        <p>자동차의 종류와 특징 유용한 팁까지 알 수 있는</p><p> 반응형 웹사이트</p>
-        <h1><a href="CarMainSite/secondproject.html" target='_blank'><button class="custom-btn btn-15">프로젝트1</button></a></h1>
-    </div>
+        <div>        
+            <h1>Vehicle</h1>
+            <p>자동차의 종류와 특징 유용한 팁까지 알 수 있는</p><p> 반응형 웹사이트</p>
+            <h1><a href="./CarMainSite/secondproject.html" target='_blank'><button class="custom-btn btn-15">프로젝트1</button></a></h1>
+        </div>
         <div>
-    <img src="image/아이맥스2.jpg" width="350px" height="350px" >
-    </div>
+            <img class="protfolioimg1" src="image/아이맥스2.jpg" width="350px" height="350px" >
+        </div>
     </section>
 
     <section id="portfolio2" class="portfolio2">
-        <div id="portfolio2">
-            <img src="image/아이맥스2.jpg" width="350px" height="350px" >               
+        <div>
+            <img class="protfolioimg2" src="image/아이맥스2.jpg" width="350px" height="350px" >               
         </div>
         <div>
             <h1>HomeShoping</h1>
             <p>홈쇼핑사이트</p>
             <h1><a href="ShopSite/Thirdproject.html" target='_blank'><button class="custom-btn btn-15">프로젝트2</button></a></h1>
         </div>
-        </section>
+    </section>
 
     <section id="portfolio3" class="portfolio3">
-        <div id="portfolio3">
+        <div>
             <h1>WebGame</h1>
             <p>자바스크립트를 이용한 마리오게임</p>
             <h1><a href="mariogame/index2.html" target='_blank'><button class="custom-btn btn-15">프로젝트3</button></a></h1>        
         </div>
         <div>
-            <img src="image/아이맥스2.jpg" width="350px" height="350px" >     
+            <img class="protfolioimg3" src="image/아이맥스2.jpg" width="350px" height="350px" >     
         </div>
-        </section>
+    </section>
 
     <div id="contact" class="contact">
         <br><br><br><br>
