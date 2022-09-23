@@ -1,0 +1,284 @@
+.signup-wrap {
+    position: relative;
+    width: 500px;
+    padding: 0 0 30px;
+    margin: 40px auto;
+}
+
+.login-form-wrap {
+    max-width: 480px;
+    margin: 0 auto 50px;
+}
+
+img, fieldset, iframe, frame {
+    border: none;
+}
+
+.signup-txt-dash {
+    position: relative;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.signup-txt-dash:before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.go-sns-login a {
+    display: inline-block;
+    width: 74px;
+    margin: 0 20px;
+    color: #111;
+}
+
+a:link, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.go-sns-login {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.go-sns-login [class*='visual-icon'] {
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.visual-icon_naver {
+    background-position: 0 -50px;
+}
+
+.visual-icon_kakao {
+    background-position: 0 -100px;
+}
+
+[class*='visual-icon'] {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 3px 12px;
+    background: url(../../image/sprite_signup.png) no-repeat;
+    opacity: 1;
+}
+
+.signup-form {
+    margin: 0 auto 20px;
+    text-align: left;
+}
+
+.blind {
+    position: absolute;
+    overflow: hidden;
+    width: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    font: 0/0 m;
+    color: transparent;
+}
+
+label {
+    cursor: default;
+}
+
+.signup-form dd {
+    margin-top: -1px;
+}
+
+dd {
+    display: block;
+}
+
+[class^='gui-input'].giant, [class*='gui-input'].giant {
+    min-height: 3.23529em;
+    padding: 14px 2em 0 10px;
+    font-size: 17px;
+    font-size: 1.0625rem;
+}
+
+div.gui-input {
+    display: block;
+}
+
+[class^='gui-input'], [class*='gui-input'] {
+    display: inline-block;
+    position: relative;
+    min-width: 70px;
+    min-height: 2.57143em;
+    line-height: 1.42858em;
+    padding: 6px 1.8em 0 0.6em;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 14px;
+    font-size: .875rem;
+}
+
+[class^=gui-], [class*=gui-] {
+    font-family: Lato,"Malgun Gothic",helvetica;
+}
+
+[class^='gui-input'] input[type='text'], [class^='gui-input'] input[type='password'], [class^='gui-input'] input[type='search'], [class^='gui-input'] input[type='number'], [class^='gui-input'] input[type='tel'], [class^='gui-input'] input[type='email'], [class*='gui-input'] input[type='text'], [class*='gui-input'] input[type='password'], [class*='gui-input'] input[type='search'], [class*='gui-input'] input[type='number'], [class*='gui-input'] input[type='tel'], [class*='gui-input'] input[type='email'] {
+    width: 100%;
+    min-height: 1.42858em;
+    border: none;
+    *border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: content-box;
+    vertical-align: baseline;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+}
+
+[class^='gui-input'] .err-msg, [class*='gui-input'] .err-msg {
+    display: none;
+}
+
+input, select, textarea, [tabindex] {
+    vertical-align: middle;
+    border-radius: 0;
+    outline: none;
+}
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gui-input.fucus {
+    border-color: #cadb2a;
+}
+
+.gui-input.fucus::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: 1px solid #cadb2a;
+}
+
+[class*=signup-btns]>.gui-btn {
+    display: block;
+    width: 100%;
+}
+
+[class*=signup-btns] .gui-btn {
+    margin-top: 10px;
+}
+
+.gui-btn.lime {
+    border-color: #b5c526;
+    background-color: #cadb2a;
+    color: #111;
+}
+
+.gui-btn.giant {
+    min-width: 3.05556em;
+    height: 3.05556em;
+    line-height: 3.05556em;
+    font-weight: 700;
+    font-size: 18px;
+    font-size: 1.125rem;
+}
+
+.gui-btn {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    min-width: 2.57143em;
+    height: 2.57143em;
+    line-height: 2.42857em;
+    padding: 0 0.85714em;
+    border: 1px solid #c9c9c9;
+    background-color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    letter-spacing: -0.02em;
+    transition: 0.15s ease-in-out;
+    font-size: 14px;
+    font-size: .875rem;
+}
+
+.login-member-opt {
+    line-height: 24px;
+    margin: 13px 0 24px;
+    text-align: center;
+}
+
+.float {
+    float: left;
+}
+
+.gui-check, .gui-radio, .gui-toggle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.gui-check>input[type='checkbox'], .gui-check>input[type='radio'], .gui-radio>input[type='checkbox'], .gui-radio>input[type='radio'], .gui-toggle>input[type='checkbox'], .gui-toggle>input[type='radio'] {
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.gui-check input:checked+label, .gui-check input.checked+label, .gui-radio input:checked+label, .gui-radio input.checked+label {
+    font-weight: 400;
+    color: #444;
+}
+
+.signup-txt-dash span {
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.float {
+    float: left;
+}
+
+.float-r {
+    float: right;
+}
+
+.hoverline {
+    display: inline-block;
+    position: relative;
+}
+
+a {
+    color: #444;
+    cursor: pointer;
+}
+
+.login-member-opt a:first-child:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    margin: 0 6px 0 10px;
+    background: #ddd;
+    vertical-align: middle;
+}
+
+[class*=signup-btns]>.gui-btn {
+    display: block;
+    width: 100%;
+}

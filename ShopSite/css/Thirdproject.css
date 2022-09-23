@@ -1,0 +1,575 @@
+body,div,ul,li{
+    margin: 0px;    
+    padding: 0px;  
+    font-family: sans-serif;
+    font-size: 100%;
+    list-style-type: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+#container {                                                           
+    position: relative;
+    min-width: 980px;
+    height:115px;
+    overflow: hidden;
+}
+
+#container .home {
+    background-color: #fff;
+    min-width: 1020px;
+}
+
+.home {
+    border: 0;
+}
+
+.renewal-header {
+    position:relative;
+    background-color:#fff;
+    border-bottom:1px solid #eee;
+}
+
+.renewal-header #header{
+    position:relative;
+    width:1000px;
+    height:115px;
+    margin:0 auto;
+    padding-top:16px;
+    background:#fff;
+}
+
+.renewal-header #header section{
+    position:absolute;
+    width:840px;
+    height:91px;
+    margin:25px 0 0 140px;
+}
+
+#header {
+    z-index: 3;
+}
+
+.renewal-header #header .product-search a.search, .renewal-header .my-coupang-icon, .renewal-header .cart-icon, .renewal-header .category-btn, .renewal-header .select-icon, .renewal-header .depth-select-icon, .renewal-header .speech-icon, .renewal-header .blue-arrow, .renewal-header .subscription-menu-warning-icon, .renewal-header .gnb-menu li.rocket-delivery, .renewal-header .vendor-join .ic {
+    background-image: url(//static.coupangcdn.com/image/coupang/common/pc_header_img_sprite_180104.png);
+    background-repeat: no-repeat;
+}
+
+.category-btn {
+    position: absolute;
+    width: 110px;
+    height: 115px;
+    top: 0px;
+    left: 0;
+    margin-right: 30px;
+    background-position: 0 0;
+    text-align: center;
+}
+
+.category-btn a {
+    display: block;
+    margin-top: 73px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.category-btn:hover .category-layer{
+    height:auto;
+    display:block
+}
+
+.category-layer {
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-height: 450px;
+    top: 114px;
+    left: 0;
+    display: none;
+    border: 1px solid #ddd;
+    box-shadow: -1px 4px 5px rgb(0 0 0 / 30%);
+    z-index: 1;
+    background: #fff;
+    text-align: left;
+}
+
+.category-layer .shopping-menu-list {
+    padding: 8px 0 5px 0;
+    border-bottom: #ddd solid 1px;
+}
+
+.category-layer li {
+    height: 29px;
+}
+
+.fashion-sundries>a:hover,.category-layer .theme-store>a:hover,.category-layer .travel-leisure>a:hover{
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.category-layer .menu>li.fashion-sundries>a{
+    background-position:-8px -27px;
+}
+
+.fashion-sundries>a:hover{
+    background-position:-200+px -27px;
+}
+
+.fashion-sundries.hover>a{
+    background-position:-200px -27px;
+}
+
+.renewal-header #header section div.clearFix {
+    position: relative;
+    z-index: 3;
+}
+
+.renewal-header #header .product-search {
+    float: left;
+    margin-left: 0;
+    width: 484px;
+    height: 37px;
+    margin-right: 22px;
+    border: 2px solid #4285f4;
+    background-position: 0 -207px;
+}
+
+.clearFix {
+    display: block;
+}
+
+.clearFix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+#headmenu {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    margin: 0px;
+    padding: 0px; 
+}
+
+#headerMenu1 {
+    flex-grow: 1;
+}
+
+#headerMenu2 {
+    flex-grow: 1;
+    
+}
+
+#headerMenu3 {
+    flex-grow: 1;
+    
+}
+
+#headerMenu4 {
+    flex-grow: 1;
+    
+}
+
+#headerMenu5 {
+    flex-grow: 1;
+    
+}
+
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+@media (max-width: 700px) {
+
+}
+
+@media (max-width: 450px) {
+
+}
+
+#global-search .search-form{
+    position: relative;
+    float: left;
+    padding-top: 20px;
+    margin-left: 350px;
+    font-size: 14px;
+}
+fieldset {
+    position: relative;
+    border:none ;
+}
+
+#global-search .search-form {
+    position: relative;
+    width: 500px;
+    height: 110px;
+    background: #fff;
+    vertical-align: top;
+}
+
+.blind {
+    position: absolute;
+    overflow: hidden;
+    width: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    font: 0/0 m;
+    color: transparent;
+}
+
+#global-search .search-input {
+    display: block;
+    height: 36px;
+    padding: 0px 85px 0 5px;
+    border: 2px solid #4285f4;
+}
+
+#global-search .search-submit {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: none;
+}
+
+#global-search legend {
+    position: absolute;
+}
+
+legend, caption {
+    position: absolute;
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+    font: 0/0 m;
+}
+
+#global-search .search-input input {
+    width: 100%;
+    line-height: normal;
+    border: 0;
+    font-size: 18px;
+    font-weight: 700;
+    outline: none;
+    ime-mode: active;
+}
+
+#global-search .search-submit span {
+    width: 25px;
+}
+
+.sprite-search-lime {
+    background-position: 0px -240px;
+}
+
+[class^='sprite-'], [class*='sprite-'] {
+    display: inline-block;
+    width: 30px !important;
+    height: 30px;
+    vertical-align: middle;
+    background-image: url(../../image/검색.png);
+}
+
+button {
+    overflow: visible;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: button;
+}
+
+.user-menu {
+    margin-top: -85px;
+    margin-left: 30px;
+    display: block;
+    font-size: 12px;
+    position: relative;
+    float: right;
+    padding: 0px;
+    white-space: nowrap;
+}
+
+.main-today {
+    position: relative;
+    height: 450px;
+    background: #fafafa;
+    z-index: 4;
+}
+
+.slide1 {
+    width: 100%;
+    height: 100%;
+    z-index: -4;
+}
+
+.dropmenu{
+    position: absolute;
+    right: 45px;
+    top: 150px;
+    border:none;
+    border:0px;
+    margin:-110px;
+    padding:0px;
+    font: "sans-serif";
+    font-size:18px;
+}
+
+.dropmenu ul{
+    background: #fff;
+    width: 190px;
+    height:20px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    z-index: 8;
+}
+
+.dropmenu li{
+    float:left;
+    padding:0px;
+}
+
+.dropmenu li a{
+    background: #fff;
+    color:#000;
+    display:block;
+    line-height:20px;
+    margin:0px;
+    padding:0px 10px;
+    text-align:center;
+    text-decoration:none;
+}
+
+.dropmenu li a:hover, .dropmenu ul li:hover a{
+    background: rgb(31,31,31);
+    color:#FFFFFF;
+    text-decoration:none;
+}
+
+.dropmenu li ul{
+    background: red;
+    display:none; 
+    height:auto;
+    border:0px;
+    position:absolute;
+    width:120px;
+    z-index:8;
+    /*top:1em;
+    /*left:0;*/
+}
+
+.dropmenu li:hover ul{
+    display:block;
+}
+
+.dropmenu li li {
+    background: red;
+    display:block;
+    float:none;
+    margin:0px;
+    padding:0px;
+    width:120px;
+}
+
+.dropmenu li:hover li a{
+    background:none;
+}
+
+.dropmenu li ul a{
+    display:block;
+    height:30px;
+    font-size:14px;
+    margin:0px;
+    padding:0px 10px 0px 15px;
+    text-align:left;
+}
+
+.dropmenu li ul a:hover, .dropmenu li ul li:hover a{
+    background: rgb(171,171,171);
+    border:0px;
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.mymenu {
+    float: left;
+}
+
+.cartmenu {
+    position: absolute;
+    left: 80px;
+}
+
+.cartmenu ul li {
+    width: 160px;
+    height: 160px;
+}
+
+.cartmenu ul li a {
+    width: 160px;
+    height: 160px;
+}
+
+#todayDiscoveryUnit{
+    position:relative;
+    width:1020px;
+    margin:0 auto;
+}
+
+.main-section.today-discovery {
+    margin-right: 40px;
+}
+
+.today-discovery .discovery-list {
+    *zoom: 1;
+    position: relative;
+    padding: 3px 0 13px 4px;
+    background: #fff;
+    border: 1px solid #d6d6d6;
+    overflow: hidden;
+}
+
+.discovery-list{*zoom:1;position:relative;padding:3px 0 13px 4px;background:#fff;border:1px solid #d6d6d6;overflow:hidden}
+.today-discovery .discovery-list:before,.today-discovery .discovery-list:after{content:'';display:table}
+.today-discovery .discovery-list:after{clear:both}
+.today-discovery .banner-list li{height:300px;float:left;position:relative;margin:10px 2px 0 10px;background:#fff}
+.flex-cube-box .typeA .swiper-stage {
+    width: 499px;
+}
+.flex-cube-box .swiper-stage {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container, .swiper-stage, .mod-stage {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+}
+.flex-cube-box .swiper-navi {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    z-index: 10;
+}
+.gui-nav {
+    height: 23px;
+    padding-top: 7px;
+    text-align: center;
+    z-index: 10;
+}
+.ctrl-btn.prev {
+    left: 10px;
+}
+.ctrl-btn {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    min-width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: -20px;
+    background: none;
+    z-index: 2;
+}
+* {margin:0;padding:0;}
+	.section input[id*="slide"] {display:none;}
+	.section .slidewrap {max-width:590px;margin:0 auto;}
+	.section .slidelist {white-space:nowrap;font-size:0;overflow:hidden;position:relative;}
+	.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
+	.section .slidelist > li > a {display:block;position:relative;}
+	.section .slidelist > li > a img {width:100%;}
+	.section .slidelist label {position:absolute;z-index:10;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+	.section .slidelist .textbox {position:absolute;z-index:1;top:50%;left:50%;transform:translate(-50%,-50%);line-height:1.6;text-align:center;}
+	.section .slidelist .textbox h3 {font-size:36px;color:#fff;;transform:translateY(30px);transition:all .5s;}
+	.section .slidelist .textbox p {font-size:16px;color:#fff;opacity:0;transform:translateY(30px);transition:all .5s;}
+	
+	/* input에 체크되면 슬라이드 효과 */
+	.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+
+	/* input에 체크되면 텍스트 효과 */
+	.section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
+	.section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
+	.section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
+	.section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
+	.section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
+	.section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
+
+	/* 좌,우 슬라이드 버튼 */
+	.slide-control > div {display:none;}
+	.section .left {left:30px;background:url('../../image/left.png') center center / 100% no-repeat;}
+	.section .right {right:30px;background:url('../../image/right.png') center center / 100% no-repeat;}
+	.section input[id="slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+	.section input[id="slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+	.section input[id="slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+
+	/* 페이징 */
+	.slide-pagelist {text-align:center;padding:20px;}
+	.slide-pagelist > li {display:inline-block;vertical-align:middle;}
+	.slide-pagelist > li > label {display:block;padding:8px 30px;border-radius:30px;background:#ccc;margin:20px 10px;cursor:pointer;}
+	.section input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#999;}
+	.section input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#999;}
+	.section input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#999;}

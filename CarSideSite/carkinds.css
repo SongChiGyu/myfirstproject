@@ -63,17 +63,29 @@ h3 {
     }
 }
 
+.wrap {
+    margin-top: 200px;
+    padding: 0px;
+}
+
 .home {    
     height: 100vh;
     text-align: center;
 }
 
 .sedan {
+    padding-top: 200px;
     height: 100vh;
     text-align: left;
 }
 
 .coupe {
+    display: block;
+    height: 100vh;
+    text-align: center;
+}
+.coupe2 {
+    display: none;
     height: 100vh;
     text-align: center;
 }
@@ -119,20 +131,21 @@ h3 {
 }
 
 .back {
-    height: 40vh;
+    height: 20vh;
     text-align: center;
 }
 
 a.button {
-    left: 800px;
-    display: block;
-    position: relative;
-    float: left;
+    /* left: 800px; */
+    display: flex;
+    /* position: relative; */
+    /* float: left; */
     width: 240px;
     padding: 0;
-    margin: 10px 20px 10px 0;
+    margin: 10px 20px 10px 0px;
     font-weight: 600;
     text-align: center;
+    justify-content: center;
     line-height: 60px;
     color: #000;
     border-radius: 5px;
@@ -294,3 +307,83 @@ background: #ffff;
     }
 }
 
+@media (max-width: 700px) {     
+    body {
+        max-width: 100%;
+    }
+    video {
+        position: relative;
+        padding-bottom: 10%;
+    }
+    h1 {
+        left: 50px;
+    }
+    @keyframes slide {
+        from {
+            left: -100px;
+            opacity: 0;
+        }
+        to {
+            left: 50px;
+            opacity: 1;
+        }
+    }
+    
+    @keyframes disappear {
+        from {
+            left: 50px;
+            opacity: 1;
+        }
+        to {
+            left: -100px;
+            opacity: 0;
+        }
+    }
+    .img1 {
+        max-width: 100%;
+    }
+    .img2 {
+        max-width: 100%;
+    }
+    .img3 {
+        max-width: 100%;
+    }
+    .img4 {
+        max-width: 100%;
+    }
+    .img5 {
+        max-width: 100%;
+    }
+    .img6 {
+        max-width: 100%;
+    }
+    .img7 {
+        max-width: 100%;
+    }
+    .img8 {
+        max-width: 100%;
+    }
+    .img9 {
+        max-width: 100%;
+    }
+    #subNav li a{
+        padding: 5px;
+    }
+    .sedan {
+        height: 100vh;
+        text-align: left;
+    }
+    .coupe {
+        display: none;
+        height: 100vh;
+        text-align: center;
+    }
+    .coupe2 {
+        display: block;
+        height: 100vh;
+        text-align: center;
+    }
+    .container {
+        display: block;
+    }
+}

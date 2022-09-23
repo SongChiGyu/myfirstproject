@@ -4,44 +4,153 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>쿠팡!</title>
+  <title>홈쇼핑사이트</title>  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <link rel="shortcut icon" href="//image9.coupangcdn.com/image/coupang/favicon/v2/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="Thirdproject.css">
+  <link rel="stylesheet" href="./css/Thirdproject.css">
 </head>
 <body>
-  <!-- header -->
   <div id="container">
     <div class="renewal-header">
       <header id="header">
         <div class="category-btn">
-          <a href="">
-            카테고리
-          </a>
-          <div class="category-layer">
-            <ul class="shopping-menu-list">
-              <li class="">
-                <a href="">
-                  패션의류/잡화
-                </a>
-              </li>
-            </ul>
-          </div>
+          <a href="#">카테고리</a>
+          <!-- <ul>
+            <li><a href="#">카테고리</a>
+              <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+              </ul>
+            </li>
+          </ul> -->
         </div>
-      <section>
-        <img src="//image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png" width="174" height="41" alt="쿠팡로고">
-        <!-- <div class="dropdown">
-          <button class="dropbtn">드롭다운 메뉴</button>
-          <div class="dropdown-content">
-            <a href="#">홈</a>
-            <a href="#">회사소개</a>
-            <a href="#">제품소개</a>
-            <a href="#">오시는길</a>
-          </div>
-        </div> -->
-      </section>
+        <section>
+          <img src="//image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png" width="174" height="41" alt="쿠팡로고">          
+        </section>
+        <div id="global-search">
+          <fieldset>
+            <legend>전체검색</legend>
+            <div id="globalSearchForm" class="search-form">
+              <label class="blind" for="gnb_tq">검색어 입력</label>
+              <span class="search-input">
+                <input type="text" name="gnb_tq" id="gnb_tq" autocomplete="off" maxlength="100" value="" title="검색어 입력">
+              </span>
+              <button type="submit" id="searchSubmit" class="search-submit"><span class="sprite-search-lime"></span></button>
+              <div id="search-result" style="display:none"></div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="dropmenu">
+          <ul>
+            <li class="mymenu"><a href="./php/login.php">마이쇼핑</a>
+              <ul>
+                <li><a href="#">주문목록</a></li>
+                <li><a href="#">취소/반품</a></li>
+                <li><a href="#">menu3</a></li>
+              </ul>
+            </li>
+            <li class="cartmenu"><a href="./php/login.php">장바구니</a>
+              <ul>
+                <li><a href="#">장바구니에 담긴 제품이 없습니다</a></li>
+              </ul>
+            </li>
+          </ul>       
+        </div> 
       </header>
-    </div>
+    </div>    
   </div>
-  <script src="Thirdproject.js"></script>
+  
+  <div class="main-today">
+    <img class="slide1" src="../image/화장품.jpg">
+    <img class="slide1" src="../image/캔음료.jpg">
+    <img class="slide1" src="../image/캐논카메라.jpg">
+    <img class="slide1" src="../image/아이맥스2.jpg">
+  </div>
+
+  <div id="todayDiscoveryUnit" class="reach-ratio-wrap">
+            
+    <div class="main-section today-discovery"><h2>오늘의 발견</h2>
+      <div class="discovery-list">
+        <ul class="banner-list prod-list">
+          <li data-vendor-item-id="0"><a href="https://pages.coupang.com/f/s31823?from=home_C2&amp;traid=home_C2&amp;trcid=11178836" data-adsplatform='{"clickLogUri":"https://mercury.coupang.com/e.gif?r=ChBzU0g2NnZuVjlQclZQdk9jEg4xMjEuMTQ0Ljg4LjEwOBi0o67HrTAgAyosQ05WaHJXNVlyM2NBcEU0Vlk5QzhHcnBOVG5HbkZwcVZjYWlYQU42SHJiVT0yBEZMQVRCFzE2NDkxMzk1OTA1NjgwNDMwODM1MjU0UNSmqgVaBWNsaWNregNXRUKKAQRtYXJzkAHjiQuYAf0ZoAHUpqoFsAHguYYCwgEMdTBmNzNJNFRsZTNY&amp;t=1", "impressionLogUri":"https://mercury.coupang.com/e.gif?r=ChBzU0g2NnZuVjlQclZQdk9jEg4xMjEuMTQ0Ljg4LjEwOBi0o67HrTAgAyosQ05WaHJXNVlyM2NBcEU0Vlk5QzhHcnBOVG5HbkZwcVZjYWlYQU42SHJiVT0yBEZMQVRCFzE2NDkxMzk1OTA1NjgwNDMwODM1MjU0UNSmqgVaCmltcHJlc3Npb256A1dFQooBBG1hcnOQAeOJC5gB%2FRmgAdSmqgWwAeC5hgLCAQx1MGY3M0k0VGxlM1g%3D&amp;t=2", "viewImpression":"https://mercury.coupang.com/e.gif?r=ChBzU0g2NnZuVjlQclZQdk9jEg4xMjEuMTQ0Ljg4LjEwOBi0o67HrTAgAyosQ05WaHJXNVlyM2NBcEU0Vlk5QzhHcnBOVG5HbkZwcVZjYWlYQU42SHJiVT0yBEZMQVRCFzE2NDkxMzk1OTA1NjgwNDMwODM1MjU0UNSmqgVaBHZpZXd6A1dFQooBBG1hcnOQAeOJC5gB%2FRmgAdSmqgWwAeC5hgLCAQx1MGY3M0k0VGxlM1g%3D&amp;t=3"}'>
+            <img src="https://static.coupangcdn.com/ba/cmg_paperboy/image/1661401079885/C2_1_%E1%84%8A%E1%85%B5%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%8C%E1%85%A6%E1%84%83%E1%85%A1%E1%86%BC%281%29.jpg" width="468" height="298" alt="" onload="logImageLoadTime(this);logImageLoadTime2(this);" class="tti-image">
+            <strong> 바로가기</strong>
+            <span class="mask">&nbsp;</span></a>
+          </li>
+          <li data-vendor-item-id="0"><a href="https://pages.coupang.com/p/66977?from=home_C2&amp;traid=home_C2&amp;trcid=11178810" data-adsplatform='{"clickLogUri":"https://mercury.coupang.com/e.gif?r=ChBtQXA4NjBkdUhRS0NndmlEEg4xMjEuMTQ0Ljg4LjEwOBi0o67HrTAgAyosQ05WaHJXNVlyM2NBcEU0Vlk5QzhHcnBOVG5HbkZwcVZjYWlYQU42SHJiVT0yBEZMQVRCFzE2NDkxMzk1OTA1NjgwNDMwODM1MjU0ULqmqgVaBWNsaWNregNXRUKKAQRtYXJzkAHjiQuYAf0ZoAG6pqoFsAHguYYCwgEMdTBmNzNJNFRsZTNY&amp;t=1", "impressionLogUri":"https://mercury.coupang.com/e.gif?r=ChBtQXA4NjBkdUhRS0NndmlEEg4xMjEuMTQ0Ljg4LjEwOBi0o67HrTAgAyosQ05WaHJXNVlyM2NBcEU0Vlk5QzhHcnBOVG5HbkZwcVZjYWlYQU42SHJiVT0yBEZMQVRCFzE2NDkxMzk1OTA1NjgwNDMwODM1MjU0ULqmqgVaCmltcHJlc3Npb256A1dFQooBBG1hcnOQAeOJC5gB%2FRmgAbqmqgWwAeC5hgLCAQx1MGY3M0k0VGxlM1g%3D&amp;t=2", "viewImpression":"https://mercury.coupang.com/e.gif?r=ChBtQXA4NjBkdUhRS0NndmlEEg4xMjEuMTQ0Ljg4LjEwOBi0o67HrTAgAyosQ05WaHJXNVlyM2NBcEU0Vlk5QzhHcnBOVG5HbkZwcVZjYWlYQU42SHJiVT0yBEZMQVRCFzE2NDkxMzk1OTA1NjgwNDMwODM1MjU0ULqmqgVaBHZpZXd6A1dFQooBBG1hcnOQAeOJC5gB%2FRmgAbqmqgWwAeC5hgLCAQx1MGY3M0k0VGxlM1g%3D&amp;t=3"}'>
+            <img src="https://static.coupangcdn.com/va/cmg_paperboy/image/1661399568265/C2_2_%E1%84%8F%E1%85%A9%E1%84%89%E1%85%B3%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%8B%E1%85%A6%E1%86%A8%E1%84%89%E1%85%B3.jpg" width="468" height="298" alt="" onload="logImageLoadTime(this);logImageLoadTime2(this);" class="tti-image">
+            <strong> 바로가기</strong>
+            <span class="mask">&nbsp;</span></a>
+          </li>
+          <li data-vendor-item-id="0"><a href="https://pages.coupang.com/f/s32699?from=home_C2&amp;traid=home_C2&amp;trcid=11178873" data-adsplatform='{"clickLogUri":"https://mercury.coupang.com/e.gif?r=ChBOVjZIV1gwWEJGTDZ3VmI4Eg4xMjEuMTQ0Ljg4LjEwOBi0o67HrTAgBCosQ05WaHJXNVlyM2NBcEU0Vlk5QzhHcnBOVG5HbkZwcVZjYWlYQU42SHJiVT0yBEZMQVRCFzE2NDkxMzk1OTA1NjgwNDMwODM1MjU0UPmmqgVaBWNsaWNregNXRUKKAQRtYXJzkAHjiQuYAf4ZoAH5pqoFsAHguYYCwgEMdTBmNzNJNFRsZTNY&amp;t=1", "impressionLogUri":"https://mercury.coupang.com/e.gif?r=ChBOVjZIV1gwWEJGTDZ3VmI4Eg4xMjEuMTQ0Ljg4LjEwOBi0o67HrTAgBCosQ05WaHJXNVlyM2NBcEU0Vlk5QzhHcnBOVG5HbkZwcVZjYWlYQU42SHJiVT0yBEZMQVRCFzE2NDkxMzk1OTA1NjgwNDMwODM1MjU0UPmmqgVaCmltcHJlc3Npb256A1dFQooBBG1hcnOQAeOJC5gB%2FhmgAfmmqgWwAeC5hgLCAQx1MGY3M0k0VGxlM1g%3D&amp;t=2", "viewImpression":"https://mercury.coupang.com/e.gif?r=ChBOVjZIV1gwWEJGTDZ3VmI4Eg4xMjEuMTQ0Ljg4LjEwOBi0o67HrTAgBCosQ05WaHJXNVlyM2NBcEU0Vlk5QzhHcnBOVG5HbkZwcVZjYWlYQU42SHJiVT0yBEZMQVRCFzE2NDkxMzk1OTA1NjgwNDMwODM1MjU0UPmmqgVaBHZpZXd6A1dFQooBBG1hcnOQAeOJC5gB%2FhmgAfmmqgWwAeC5hgLCAQx1MGY3M0k0VGxlM1g%3D&amp;t=3"}'>
+            <img src="https://static.coupangcdn.com/ra/cmg_paperboy/image/1661393729155/C2_3_%E1%84%85%E1%85%A9%E1%84%85%E1%85%A6%E1%84%8B%E1%85%A1%E1%86%AF.jpg" width="228" height="298" alt="" onload="logImageLoadTime(this);logImageLoadTime2(this);" class="tti-image">
+            <strong> 바로가기</strong>
+            <span class="mask">&nbsp;</span></a>
+          </li>
+          <li data-vendor-item-id="0"><a href="/vp/products/5803602145?itemId=16768559&amp;vendorItemId=77244998348&amp;from=home_C2&amp;traid=home_C2&amp;trcid=4716320" >
+            <img src="//thumbnail10.coupangcdn.com/thumbnails/remote/x/image/displayitem/displayitem_e788294b-d775-4a5a-9268-c5a8ccdec044.jpg" width="228" height="298" alt="비타할로 자몽 과즙 농축액, 1.5L, 1개" onload="logImageLoadTime(this);logImageLoadTime2(this);" class="tti-image">
+            <strong>비타할로 자몽 과즙 농축액, 1.5L, 1개 바로가기</strong> <span class="mask">&nbsp;</span></a>
+          </li>
+          <li data-vendor-item-id="0"><a href="/vp/products/5803602145?itemId=16768559&amp;vendorItemId=77244998348&amp;from=home_C2&amp;traid=home_C2&amp;trcid=4716320" >
+            <img src="https://static.coupangcdn.com/pa/cmg_paperboy/image/1661319744151/C2_5_%E1%84%92%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B2%E1%86%AB.jpg" width="228" height="298" alt="" onload="logImageLoadTime(this);logImageLoadTime2(this);" class="tti-image tti-image2" data-load-time-start="370.7999999523163" data-load-time-end="636.2999999523163" data-load-time="864.5" data-load-time2-start="370.7999999523163" data-load-time2-end="636.2999999523163" data-load-time2="864.5">
+            <strong> 바로가기</strong> <span class="mask">&nbsp;</span></a>
+          </li>
+          <li data-vendor-item-id="0"><a href="/vp/products/5803602145?itemId=16768559&amp;vendorItemId=77244998348&amp;from=home_C2&amp;traid=home_C2&amp;trcid=4716320" >
+            <img src="https://static.coupangcdn.com/za/cmg_paperboy/image/1661401003521/C2_6_%E1%84%86%E1%85%A5%E1%84%8F%E1%85%B2%E1%84%85%E1%85%B5%E1%84%8F%E1%85%A9%E1%84%91%E1%85%A5%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB.jpg" width="228" height="298" alt="" onload="logImageLoadTime(this);logImageLoadTime2(this);" class="tti-image tti-image2" data-load-time-start="370.90000009536743" data-load-time-end="642.9000000953674" data-load-time="864.7000000476837" data-load-time2-start="370.90000009536743" data-load-time2-end="642.9000000953674" data-load-time2="864.7000000476837">
+            <strong> 바로가기</strong> <span class="mask">&nbsp;</span></a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <input type="radio" name="slide" id="slide01" checked>
+      <input type="radio" name="slide" id="slide02">
+      <input type="radio" name="slide" id="slide03">
+      <div class="slidewrap">
+        
+        <ul class="slidelist">
+          <!-- 슬라이드 영역 -->
+          <li class="slideitem">
+            <a class="swiper-slide" href="/deal/deal.gs?dealNo=95377032&amp;svcid=mc&amp;lseq=408590-3&amp;dseq=352427494&amp;gsid=ECmain-AU408590-AU408590-3" style="width: 503px; height: 499px;"><img src="//image.gsshop.com/planprd/banner_MAINCORNER/352481068_01.jpg" alt=""></a>
+          </li>
+          <li class="slideitem">
+            <a class="swiper-slide" href="/deal/deal.gs?dealNo=1016894547&amp;svcid=mc&amp;lseq=408590-1&amp;dseq=350168500&amp;gsid=ECmain-AU408590-AU408590-1" style="width: 503px; height: 499px;"><img src="//image.gsshop.com/planprd/banner_MAINCORNER/350168499_01.jpg" alt=""></a>
+          </li>
+          <li class="slideitem">
+            <a class="swiper-slide" href="/deal/deal.gs?dealNo=1016895745&amp;svcid=mc&amp;lseq=408590-2&amp;dseq=351704532&amp;gsid=ECmain-AU408590-AU408590-2" style="width: 503px; height: 499px;"><img src="//image.gsshop.com/planprd/banner_MAINCORNER/351704272_01.jpg" alt=""></a>
+          </li class="slideitem">
+    
+          <!-- 좌,우 슬라이드 버튼 -->
+          <div class="slide-control">
+            <div>
+              <label for="slide03" class="left"></label>
+              <label for="slide02" class="right"></label>
+            </div>
+            <div>
+              <label for="slide01" class="left"></label>
+              <label for="slide03" class="right"></label>
+            </div>
+            <div>
+              <label for="slide02" class="left"></label>
+              <label for="slide01" class="right"></label>
+            </div>
+          </div>
+    
+        </ul>
+        <!-- 페이징 -->
+        <ul class="slide-pagelist">
+          <li><label for="slide01"></label></li>
+          <li><label for="slide02"></label></li>
+          <li><label for="slide03"></label></li>
+        </ul>
+      </div> 
+    </div>
+</div>
+
+  <script src="./js/Thirdproject.js"></script>
 </body>
 </html>

@@ -4,12 +4,23 @@ window.addEventListener('scroll',function () {
     let value = window.scrollY;
     console.log("scrollY",value);
 
-    if (value >= 400) {
-        mainText.style.animation = 'disappear 2s ease-out forwards';
-    }
-
+    if (window.matchMedia("(min-width: 400px)").matches) {
+        /* 뷰포트 너비가 400 픽셀 이상 */
+        if (value >= 400) {
+            mainText.style.animation = 'disappear 2s ease-out forwards';
+        }
+        else {
+            mainText.style.animation = 'slide 2s ease-out';
+        }      
+    } 
     else {
-        mainText.style.animation = 'slide 2s ease-out';
+        /* 뷰포트 너비가 400 픽셀 미만 */
+        if (value >= 200) {
+            mainText.style.animation = 'disappear 2s ease-out forwards';
+        }
+        else {
+            mainText.style.animation = 'slide 2s ease-out';
+        } 
     }
 });
 
@@ -18,12 +29,23 @@ let subText = document.querySelector(".textp1");
 window.addEventListener('scroll',function () {
     let value = window.scrollY;
     
-
-    if (value >= 900) {
-        subText.style.animation = 'grow1 2s ease-out';        
+    if (window.matchMedia("(min-width: 400px)").matches) {
+        /* 뷰포트 너비가 400 픽셀 이상 */
+        if (value >= 900) {
+            subText.style.animation = 'grow1 2s ease-out';        
+        } 
+        else {
+            subText.style.animation = 'grow2 2s ease-out forwards';      
+        }     
     } 
     else {
-        subText.style.animation = 'grow2 2s ease-out forwards';      
+        /* 뷰포트 너비가 400 픽셀 미만 */
+        if (value >= 700) {
+            subText.style.animation = 'grow1 2s ease-out';        
+        } 
+        else {
+            subText.style.animation = 'grow2 2s ease-out forwards';      
+        }
     }
 });
 
