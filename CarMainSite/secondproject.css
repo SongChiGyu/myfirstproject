@@ -1,0 +1,224 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 3000px;
+    margin: 0%;
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+    font-size: 2em;
+}
+
+.btn {
+    width: 150px;
+    height: 100px;
+}
+
+.main{
+    height: 1000px;
+    background-image: url("../image/car1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.topmenu {
+    position: relative;
+    text-align: right;
+
+}
+
+.dropdown {
+    position: absolute;
+    /* right: 300px; */
+}
+
+.act1{
+    height: 100vh;
+    text-align: center;
+}
+
+.act2{
+    height: 100vh;
+    text-align: center;
+}
+
+.act3{
+    height: 100vh;
+    text-align: center;
+}
+
+.act4{
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 8em;
+    font-family: sans-serif;
+}
+
+.textany1 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: fadeInUp1 1s ;
+}
+
+.textany2 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: fadeInUp1 1s ;
+}
+
+.textany3 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: fadeInUp1 1s ;
+}
+
+.textany4 {
+    padding: 10px;
+    margin: 0px;
+    font-family: sans-serif;
+    animation: fadeInUp1 1s ;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp1;
+    -webkit-animation-name: fadeInUp1;
+}
+
+/* Animation */
+
+@keyframes fadeInUp1 {
+    from {        
+        transform: translate3d(0,40px,0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp2 {
+    from {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+
+    to {        
+        transform: translate3d(0,40px,0);
+        opacity: 0;
+    }
+}
+
+body {
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity .65s .15s
+}
+
+body.reveal {
+    opacity: 1;
+    overflow-y: auto
+}
+
+body.hidden {
+    opacity: 0
+}
+
+.menutext {
+    margin: 0px;
+    margin-top: 300px;
+    text-align: center;
+}
+
+.act1img {
+    width:800px;
+}
+
+.act2img {
+    width:800px;
+}
+
+.act3img {
+    width:800px;
+}
+
+.act4img {
+    width:800px;
+}
+
+@media (max-width: 700px) {     
+    body {
+        max-width: 100%;
+    }                                    
+    body.reveal {
+        max-width: 100%;
+        max-height: 100%;
+        opacity: 1;
+        overflow-y: auto
+    }
+    .main > div > h1 {
+        left: 400px;
+    }
+    .main {
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(../image/car1.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .act1 {
+        max-width: 100%;        
+    }
+    .act1img {
+        max-width: 100%;
+    }
+    
+    .act2img {
+        max-width: 100%;
+    }
+    
+    .act3img {
+        max-width: 100%;
+    }
+    
+    .act4img {
+        max-width: 100%;
+    }
+    .act2 {
+        max-width: 100%; 
+    }
+    .act3 {
+        max-width: 100%; 
+    }
+    .act4 {
+        max-width: 100%; 
+    }
+}
